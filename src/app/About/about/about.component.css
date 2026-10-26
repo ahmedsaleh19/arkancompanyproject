@@ -1,0 +1,36 @@
+.slogen{
+  text-align: center;
+  max-width: 60%;
+  margin: auto ;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+.card{
+  background-color: #F7F7F7;
+}
+.btn {
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  z-index: 1000;
+
+}
+
+.btn i {
+    font-size: 30px;
+    color: white;
+
+}
+
+    

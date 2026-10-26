@@ -1,0 +1,33 @@
+<!-- appHighlight = "#292521" appFontColor ="white" custColor="white" -->
+
+<div class=" container-fluid my-5 mx-20" id="services" appHighlight = "#F7F3ED" externalColor="#F7F3ED">
+  <h1>OUR SERVICES</h1>
+  <hr>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let serve of services; let index = index">
+      <div class="card">
+        <img
+          [src]="serve.imgUrl"
+          class="card-img-top services-image"
+          alt="{{ serve.title }}"/>
+        <div class="card-body" appHighlight = "#F7F3ED" externalColor="#D8C5AE">
+          <span class="rounded-circle" >
+          <i [class]="serve.iconUrl" ></i>
+        </span>
+          <h4 class="card-title" appFontColor ="#655D55" custColor="#655D55">{{ serve.title }}</h4>
+          <h5>{{ serve.subtitle }}</h5>
+          <p class="card-text">
+            {{ serve.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+
+<i class="bi bi-brush service-icon"></i>
+
+<i class="bi bi-house-gear"></i>
+
+<i class="bi bi-clipboard-check"></i> -->
